@@ -1,9 +1,21 @@
 {
     "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
-    
-  "github": {
-    "silent": true
-  }
-
-    
-  }
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "index.js"
+        },
+        {
+            "src": "/api(.*)",
+            "dest": "index.js"
+        }
+        
+    ]
+}
