@@ -7,15 +7,5 @@
             "use": "@now/node"
         }
     ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "index.js"
-        },
-        {
-            "src": "/api(.*)",
-            "dest": "index.js"
-        }
-        
-    ]
+    
 }
